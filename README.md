@@ -1,5 +1,41 @@
-# computer-infrastructure
+# Computer-infrastructure
+
+
+**Author**: David Scally  
+**University**: Atlantic Technological University  
+**Module**: Computer Infrastructure 
+**Class**: September 2025 
+
+This repository contains a notebook problems.ipynb that answers the problems detailed in the [problems.md](https://github.com/ianmcloughlin/computer-infrastructure/blob/main/assessment/problems.md)
+
+
+
 My assessment for this module.
+
+## Stated Aim  
+
+Complete  tasks outlined in course module .......................
+
+See ............ task headings below:
+
+
+## Repository Contents
+
+ - problems.ipynb - Jupyter notebook with solutions to above problems
+ - requirements.txt - List of packages used in the analysis
+ - README - This file, used to explain the project
+
+  ## Installation
+
+1. Clone the repository
+
+git clone https://github.com/Mr-Scarf/computer-infrastructure
+
+2. Install dependencies - see file 'requirements.txt'
+
+pip install -r requirements.txt
+
+3. Open file `pronlems.ipynb` Jupyter notebook  and run the tasks.
 
 
 ## Problems
