@@ -1,14 +1,36 @@
-# Computer-infrastructure
+# Computer Infrastructure Module
 
 
 **Author**: David Scally  
 **University**: Atlantic Technological University  
-**Module**: Computer Infrastructure 
+**Module**: Computer Infrastructure  
 **Class**: September 2025 
 
-This repository contains a notebook problems.ipynb that answers the problems detailed in the [problems.md](https://github.com/ianmcloughlin/computer-infrastructure/blob/main/assessment/problems.md)
+This repository contains a notebook problems.ipynb that answers the problems detailed in the [problems.md](https://github.com/ianmcloughlin/computer-infrastructure/blob/main/assessment/problems.md)where we look at the stock prices of the famous FAANG companies:
 
 
+Facebook (Meta)  
+Apple  
+Amazon  
+Netflix  
+Google (Alphabet)  
+
+
+
+![FAANG finance chart](https://d1yhils6iwh5l5.cloudfront.net/charts/resized/48365/large/faang_image.gif)
+ 
+
+## Module Learning Outcomes
+
+Learn how to:
+
+1. Use, configure, and script in a command line interface environment.
+
+2. Manipulate and move data and code using the command line.
+
+3. Compare commonly available software infrastructures and architectures.
+
+4. Select appropriate infrastructure for a given computational task.
 
 My assessment for this module.
 
