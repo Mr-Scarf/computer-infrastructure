@@ -75,9 +75,15 @@ In your notebook, explain each of the individual lines in your workflow.
 
 ## Repository Contents
 
- - problems.ipynb - Jupyter notebook with solutions to above problems
- - requirements.txt - List of packages used in the analysis
  - README - This file, used to explain the project
+ - problems.ipynb - Jupyter notebook with solutions to above problems
+ - data - Folder that contains csv files of FAANG stock data over the last 5 days
+ - plots - Opens latest file in data folder & generates plot of closing prices of FAANG stocks over the last 5 days
+ - faang.py - Python script that runs, downloading the data and creating the plots of FAANG data
+ - .github/workflows - Conatains script 'faang.yml' that runs the code every Saturday morning.
+ - requirements.txt - List of packages used in the analysis
+ 
+ - 
 
   ## Installation
 
@@ -89,7 +95,7 @@ git clone https://github.com/Mr-Scarf/computer-infrastructure
 
 pip install -r requirements.txt
 
-3. Open file `pronlems.ipynb` Jupyter notebook  and run the tasks.
+3. Open file `problems.ipynb` Jupyter notebook  and run the tasks.
 
 
 ## Problems
