@@ -1,24 +1,29 @@
 # Computer Infrastructure Module
 
+![FAANG finance chart](https://www.trueup.io/img/tag/faang_plus.svg)
+
 
 **Author**: David Scally  
 **University**: Atlantic Technological University  
 **Module**: Computer Infrastructure  
 **Class**: September 2025 
 
-This repository contains a notebook problems.ipynb that answers the problems detailed in the [problems.md](https://github.com/ianmcloughlin/computer-infrastructure/blob/main/assessment/problems.md) where we look at the stock prices of the famous FAANG companies:
+## Overview
+
+This project is an analysis of the famous five 'FAANG' companies hourly stock data across the most recent 5 day period. 
+
+| Company        | Ticker |
+|---------------|--------|
+| Meta Platforms | META   |
+| Apple Inc.     | AAPL   |
+| Amazon.com     | AMZN   |
+| Netflix Inc.   | NFLX   |
+| Alphabet Inc.  | GOOG   |
 
 
-Facebook (Meta)  
-Apple  
-Amazon  
-Netflix  
-Google (Alphabet)  
+The goal, across four pre-set problems,  is to read in the finanace data, use functions to save a csv and plots in our desired naming convention, then script & automate the running of our csv & plots.
+See below Stated Aim & Problems listed 1-4 for more detail.
 
-
-
-![FAANG finance chart](https://www.trueup.io/img/tag/faang_plus.svg)
- 
 
 ## Module Learning Outcomes
 
@@ -89,13 +94,24 @@ In your notebook, explain each of the individual lines in your workflow.
 
 1. Clone the repository
 
+```python
 git clone https://github.com/Mr-Scarf/computer-infrastructure
+```
+2. Install dependencies/required packages
 
-2. Install dependencies - see file 'requirements.txt'
 
+```python
 pip install -r requirements.txt
+```
+3. Run the Jupyter notebook or the python scipt:
+```python
+Jupyter notebook  `problems.ipynb` 
+```
+or
 
-3. Open file `problems.ipynb` Jupyter notebook  and run the tasks.
+```python
+python  `faang.py' 
+```
 
 
 ## Problems
