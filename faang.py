@@ -1,30 +1,9 @@
 #! /usr/bin/env python      
 # https://stackoverflow.com/questions/2429511/why-do-people-write-usr-bin-env-python-on-the-first-line-of-a-python-script
 
- # Dates & Times. https://atlantictu-my.sharepoint.com/personal/ian_mcloughlin_atu_ie/_layouts/15/stream.aspx?id=%2Fpersonal%2Fian%5Fmcloughlin%5Fatu%5Fie%2FDocuments%2Fstudent%5Fshares%2Fcomputer%2Dinfrastructure%2F22%2Ddatetime%2Emkv&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eca70c99c%2D5d51%2D4c6a%2D8743%2D670d34da45a7
-import datetime as dt
+# Problem 3 - FAANG Stocks Data Download and Plotting Script
 
-# Yahoo finance
-import yfinance as yf
 
-# Folder creation + listing files
-import os
-
-# Get Data
-df = yf.download("META AAPL AMZN NFLX GOOG", period="5d")
-
-# Show current date & time                                        #Ref. - https://docs.python.org/3/library/datetime.html
-now = dt.datetime.now()
-
-# File Name
-filename = now.strftime("%Y%m%d-%H:%M:%S")+ ".csv"
-
-# Save timestamped csv to Data folder
-df.to_csv(filename)
-
-*************************************Need to review below code - plotting not working *******************************
-#! /usr/bin/env python      
-# https://stackoverflow.com/questions/2429511/why-do-people-write-usr-bin-env-python-on-the-first-line-of-a-python-script
 
  # Dates & Times. https://atlantictu-my.sharepoint.com/personal/ian_mcloughlin_atu_ie/_layouts/15/stream.aspx?id=%2Fpersonal%2Fian%5Fmcloughlin%5Fatu%5Fie%2FDocuments%2Fstudent%5Fshares%2Fcomputer%2Dinfrastructure%2F22%2Ddatetime%2Emkv&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eca70c99c%2D5d51%2D4c6a%2D8743%2D670d34da45a7
 import datetime as dt
@@ -34,6 +13,12 @@ import yfinance as yf
 
 # Folder creation + listing files
 import os
+
+# Data frames
+import pandas as pd
+
+# Plotting
+import matplotlib.pyplot as plt
 
  # Set up the function 'get_data()' that can be called for hourly prices of FAANG stocks over the last 5 days
 def get_data(): 
@@ -59,8 +44,6 @@ def get_data():
 # Yfinance Download -  https://ranaroussi.github.io/yfinance/reference/api/yfinance.download.html
 
  
- # Call the function
-df = get_data()
 
 # Load latest file from data folder & plot closing prices
 
@@ -101,9 +84,19 @@ def plot_data():
 # Save figure in plots folder
     fig.savefig(filename, dpi=300)    # dpi ref = https://stackoverflow.com/questions/39870642/how-to-plot-a-high-resolution-graph
     plt.show()
-# Call the function
-plot_data()
 
+# chatgpt assistance on this part ' what is best way to combine python functions to run in sequence?'
+# ref: https://chatgpt.com/share/6942cc17-3f98-8005-83c0-cb212a66f204
 
+# Calling the functions in sequence
+
+def main():
+    get_data()
+    plot_data()
+
+# Execute main function
+
+if __name__ == "__main__":
+    main()
 
 
