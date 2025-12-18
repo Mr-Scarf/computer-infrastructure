@@ -12,7 +12,7 @@ name: Run faang script and commit changes
 # Trigger: scheduled + manual
 on:
   schedule:
-    - cron: "0 10 * * 6"
+    - cron: "0 9 * * SAT"
   workflow_dispatch:
 
 # Grant GitHub Actions token read/write permissions
