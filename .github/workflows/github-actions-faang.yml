@@ -1,0 +1,57 @@
+
+
+#From crontab: https://crontab.guru/ 
+#0 10 * * 6
+# Reference link - Adapted from Chatgpt:
+# https://chatgpt.com/share/6944212b-b068-8005-a470-fd979b7f7f4b
+
+# This workflow runs at 10:00 AM every Saturday
+
+name: Run faang script and commit changes
+
+on:
+  schedule:
+    # Runs every day at 02:00 UTC
+    - cron: "0 10 * * 6"
+
+  workflow_dispatch:
+
+jobs:
+  run-faang:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Clone the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # 2. Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # (Optional) Install dependencies
+       - name: Install dependencies
+         run: pip install -r requirements.txt
+
+      # 3. Run faang.py
+      - name: Run faang.py
+        run: python faang.py
+
+      # 4. Commit and push changes
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Automated update from faang.py"
+            git push
+          else
+            echo "No changes to commit"
+          fi
