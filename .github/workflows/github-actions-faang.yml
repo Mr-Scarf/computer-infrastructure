@@ -11,9 +11,7 @@ name: Run faang script and commit changes
 
 on:
   schedule:
-    # Runs every day at 02:00 UTC
     - cron: "0 10 * * 6"
-
   workflow_dispatch:
 
 jobs:
@@ -21,27 +19,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Clone the repository
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # 2. Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # (Optional) Install dependencies
-       - name: Install dependencies
-         run: pip install -r requirements.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
-      # 3. Run faang.py
       - name: Run faang.py
         run: python faang.py
 
-      # 4. Commit and push changes
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
