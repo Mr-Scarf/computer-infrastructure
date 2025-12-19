@@ -10,7 +10,9 @@
 
 ## Overview
 
-This project is an analysis of the famous five 'FAANG' companies hourly stock data across the most recent 5 day period. 
+The goal of the assignment is to demonstrate tools learned in the module, such as using python tools to collect,analyse,visualise, and schedule automation of a workflow.
+We will demonstrate this by looking at the famous 5 'FAANG' companies hourly stock data across the most recent 5 day period
+
 
 | Company        | Ticker |
 |---------------|--------|
@@ -21,21 +23,9 @@ This project is an analysis of the famous five 'FAANG' companies hourly stock da
 | Alphabet Inc.  | GOOG   |
 
 
-The goal, across four pre-set problems,  is to read in the finanace data, use functions to save a csv and plots in our desired naming convention, then script & automate the running of our csv & plots.
+The goal, across four pre-set problems,  is to read in the finance data, use functions to save csv files and plots in our desired naming convention, then script & automate the running of our csv & plots.
 See below Stated Aim & Problems listed 1-4 for more detail.
 
-
-## Module Learning Outcomes
-
-Learn how to:
-
-1. Use, configure, and script in a command line interface environment.
-
-2. Manipulate and move data and code using the command line.
-
-3. Compare commonly available software infrastructures and architectures.
-
-4. Select appropriate infrastructure for a given computational task.
 
 My assessment for this module.
 
@@ -85,10 +75,10 @@ In your notebook, explain each of the individual lines in your workflow.
  - data - Folder that contains csv files of FAANG stock data over the last 5 days
  - plots - Opens latest file in data folder & generates plot of closing prices of FAANG stocks over the last 5 days
  - faang.py - Python script that runs, downloading the data and creating the plots of FAANG data
- - .github/workflows - Conatains script 'faang.yml' that runs the code every Saturday morning.
+ - .github/workflows - Contains script 'faang.yml' that runs the code every Saturday morning.
  - requirements.txt - List of packages used in the analysis
  
- - 
+ 
 
   ## Installation
 
@@ -103,7 +93,7 @@ git clone https://github.com/Mr-Scarf/computer-infrastructure
 ```python
 pip install -r requirements.txt
 ```
-3. Run the Jupyter notebook or the python scipt:
+3. Run the Jupyter notebook or the python script:
 ```python
 Jupyter notebook  `problems.ipynb` 
 ```
