@@ -11,7 +11,7 @@
 ## Overview
 
 The goal of the assignment is to demonstrate tools learned in the module, such as using Python tools to collect, analyse, visualise and automation of a workflow.
-We will demonstrate this by looking at the famous five 'FAANG' companies hourly stock data across the most recent five-day period.
+We will demonstrate this by looking at the well known five 'FAANG' companies hourly stock data across the most recent five-day period.
 
 
 | Company        | Ticker |
@@ -72,7 +72,7 @@ In your notebook, explain each of the individual lines in your workflow.
  - **plots** - Contains generated plots of 'FAANG' stock closing prices over the last five days, based on latest data file.
  - **.gitignore** - Tells Git which files to ignore in repository.
  - **README** - This file, used to explain the project.
- - **faang.py** - Python script that runs, downloading the data and creating the plots of 'FAANG' data.
+ - **faang.py** - Python script with function to download, save and create plots of 'FAANG' data.
  - **problems.ipynb** - Jupyter notebook with solutions to above problems.
  - **requirements.txt** - List of packages used in the analysis.
  
