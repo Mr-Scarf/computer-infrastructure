@@ -1,4 +1,4 @@
-# Computer Infrastructure Module
+ # Computer Infrastructure Assignment: Automate a Python Workflow (FAANG stock data)
 
 ![FAANG finance chart](https://www.trueup.io/img/tag/faang_plus.svg)
 
@@ -10,8 +10,8 @@
 
 ## Overview
 
-The goal of the assignment is to demonstrate tools learned in the module, such as using python tools to collect, analyse, visualise and schedule automation of a workflow.
-We will demonstrate this by looking at the famous five 'FAANG' companies hourly stock data across the most recent five-day period
+The goal of the assignment is to demonstrate tools learned in the module, such as using Python tools to collect, analyse, visualise and automation of a workflow.
+We will demonstrate this by looking at the famous five 'FAANG' companies hourly stock data across the most recent five-day period.
 
 
 | Company        | Ticker |
@@ -23,7 +23,7 @@ We will demonstrate this by looking at the famous five 'FAANG' companies hourly 
 | Alphabet Inc.  | GOOG   |
 
 
-The goal, across four pre-set problems, is to read in the finance data, use functions to save csv files and plots in our desired naming convention, then script & automate the running of our csv & plots.  
+Across four pre-set problems, the assignment is to read in the finance data, use functions to save csv files and plots in our desired naming convention, then script & automate the workflow using Github Actions. 
 See below, **Stated Aim** & **Problems** listed 1-4 for more detail.
 
 ## Stated Aim  
@@ -69,7 +69,7 @@ In your notebook, explain each of the individual lines in your workflow.
 
  - **.github/workflows** - Contains script 'faang.yml' that runs the code every Saturday morning.
  - **data** - Folder that contains csv files of 'FAANG' stock data over the last five days.
- - **plots** - Opens latest file in data folder & generates plot of closing prices of 'FAANG' stocks over the last five days.
+ - **plots** - Contains generated plots of 'FAANG' stock closing prices over the last five days, based on latest data file.
  - **.gitignore** - Tells Git which files to ignore in repository.
  - **README** - This file, used to explain the project.
  - **faang.py** - Python script that runs, downloading the data and creating the plots of 'FAANG' data.
@@ -81,24 +81,23 @@ In your notebook, explain each of the individual lines in your workflow.
 
 1. **Clone the repository.**
 
-```python
+```bash
 git clone https://github.com/Mr-Scarf/computer-infrastructure
 ```
 2. **Install dependencies/required packages.**
 
 
-```python
+```bash
 pip install -r requirements.txt
 ```
-3. **Run the Jupyter notebook or the python script:**
-```python
+3. **Run the jupyter notebook or the python script:**
+```bash
 Jupyter notebook  `problems.ipynb` 
 ```
 **or**
 
-```python
+```bash
 python  `faang.py' 
 ```
 
 
-End
